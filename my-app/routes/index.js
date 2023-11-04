@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get("/about",async (req,res)=>{
+  res.send(`<h1>About Us Page</h1>`);
+})
+
 module.exports = router;
